@@ -1,10 +1,13 @@
 # Motion-Triggered Audio Message Player
-Uses an Arduino wave shield, PIR motion sensor, and speakers to play an audio message when motion is detected.
+Uses an Arduino audio wave shield, PIR motion sensor, and speakers to play an audio message when motion is detected.  GPIO and SPI are used to communicate with the hardware.
+
+## Author
+Shaun Astarabadi - shaun.astarabadi@wdc.com
 
 ## Required Components
 * HiFive1 - A RISC-V, Arduino-Compatible Development Board
   https://www.sifive.com/products/hifive1/
-* Wave Shield for Arduino Kit
+* Audio Wave Shield for Arduino Kit
   https://www.adafruit.com/product/94
 * Passive Infrared Motion Sensor
   https://www.adafruit.com/product/189
@@ -13,8 +16,8 @@ Uses an Arduino wave shield, PIR motion sensor, and speakers to play an audio me
   
 ## Assembly
   
-### Arduino Wave Shield
-The wave shield requires a few modifications to allow the serial peripheral interface (SPI) to work with the HiFive board.  Jumpers must be connected between the points specified in the table below.
+### Arduino Audio Wave Shield
+The audio wave shield requires a few modifications to allow the serial peripheral interface (SPI) to work with the HiFive board.  Jumpers must be connected between the points specified in the table below.
 
 | JP13 | GPIO | SPI Signal |
 | -----| -----| ---------- |
@@ -25,7 +28,7 @@ The wave shield requires a few modifications to allow the serial peripheral inte
 
 For more information, see the schematics: https://cdn-learn.adafruit.com/assets/assets/000/010/163/original/wave11schem.png
 
-NOTE: Do not apply the jumper wiring instructions for JP13 in the wave shield assembly document (because that is needed for an Arduino, not a HiFive).  These instructions were created for version 1.1 of the wave shield.
+NOTE: Do not apply the jumper wiring instructions for JP13 in the audio wave shield assembly document (because that is needed for an Arduino, not a HiFive).  These instructions were created for version 1.1 of the wave shield.
 
 ### Motion Sensor
 The motion sensor has 3 wires that need to be connected to the HiFive board.  

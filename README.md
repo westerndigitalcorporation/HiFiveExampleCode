@@ -1,6 +1,7 @@
 # HiFive Example Code
 Example applications that run on a HiFive - SiFive's RISC-V-based, open-source, Arduino-compatible development board.
 ## Motion-Triggered Audio Message Player
-Uses an Arduino audio wave shield, PIR motion sensor, and speakers to play an audio message when motion is detected. GPIO and SPI are used to communicate with the hardware.  Author: Shaun Astarabadi - shaun.astarabadi@wdc.com.
+A motion activated audio player, which plays an 11 KHz 12-bit uncompressed audio over an Arduino audio wave shield using a SPI interface that is triggered by a passive infrared sensor or a push button through a GPIO interface.  
+Author: Shaun Astarabadi - shaun.astarabadi@wdc.com.
 
 <img src="MotionTriggeredAudioMessagePlayer/ProjectHardware.jpg"  width='480'>

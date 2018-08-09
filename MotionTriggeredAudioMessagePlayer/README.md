@@ -1,4 +1,7 @@
 # Motion-Triggered Audio Message Player
+
+<img src="ProjectHardware.jpg"  width='480'>
+
 A motion activated audio player, which plays an 11 KHz 12-bit uncompressed audio over an Arduino audio wave shield using a SPI interface that is triggered by a passive infrared sensor or a push button through a GPIO interface.
 
 ## Author
